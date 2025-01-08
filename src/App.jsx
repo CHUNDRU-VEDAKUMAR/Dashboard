@@ -17,21 +17,13 @@ const App = () => {
 
       {/* Main content area */}
       <div
-        className={`flex-grow transition-all duration-300 ${
-          isSidebarOpen ? 'ml-60' : 'ml-0'
-        }`} // Adjust content based on sidebar state
+        className={`flex-grow transition-all duration-300 ${isSidebarOpen ? 'ml-60' : 'ml-0'}`}
       >
         {/* Navbar with the sidebar toggle button */}
         <Navbar
           toggleSidebar={toggleSidebar}
           isSidebarOpen={isSidebarOpen}
         />
-
-        {/* Main content area */}
-        <div className="p-4">
-          <h1>Welcome to the College Dashboard</h1>
-          <p>This is your main content area.</p>
-        </div>
       </div>
     </div>
   );

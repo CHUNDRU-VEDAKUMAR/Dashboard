@@ -4,7 +4,7 @@ import { Menu } from '@mui/icons-material'; // Import the menu icon for the togg
 
 const Navbar = ({ toggleSidebar }) => {
   return (
-    <div className="navbar bg-base-100">
+    <div className="navbar bg-base-100 w-100 border-bla">
       {/* Sidebar Toggle Button */}
       <div className="flex-none">
         <IconButton onClick={toggleSidebar} className="lg:hidden">
