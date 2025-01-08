@@ -28,7 +28,7 @@ const Sidebar = ({ isOpen, toggleSidebar }) => {
       <Box className="flex justify-between p-4 bg-blue-600 text-white">
         <h2>College Dashboard</h2>
         <IconButton onClick={toggleSidebar}>
-          <Close />
+          {/*<Close />*/}
         </IconButton>
       </Box>
       

@@ -3,7 +3,7 @@ import Navbar from './components/Navbar'; // Import your Navbar component
 import Sidebar from './components/sidebar/Sidebar'; // Sidebar component to show/hide
 
 const App = () => {
-  const [isSidebarOpen, setIsSidebarOpen] = useState(false);
+  const [isSidebarOpen, setIsSidebarOpen] = useState(true);
 
   // Function to toggle the sidebar visibility
   const toggleSidebar = () => {
@@ -17,8 +17,7 @@ const App = () => {
 
       {/* Main content area */}
       <div
-        className={`flex-grow transition-all duration-300 ${
-          isSidebarOpen ? 'ml-60' : 'ml-0'
+        className={`flex-grow transition-all duration-300 
         }`} // Adjust content based on sidebar state
       >
         {/* Navbar with the sidebar toggle button */}
