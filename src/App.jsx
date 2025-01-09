@@ -1,6 +1,7 @@
 import React, { useState } from 'react';
 import Navbar from './components/Navbar'; // Import your Navbar component
 import Sidebar from './components/sidebar/Sidebar'; // Sidebar component to show/hide
+import Body from './components/Body'
 
 const App = () => {
   const [isSidebarOpen, setIsSidebarOpen] = useState(false);
@@ -25,6 +26,9 @@ const App = () => {
           isSidebarOpen={isSidebarOpen}
         />
       </div>
+     <div className={`pt-16 flex-grow transition-all duration-300 ${isSidebarOpen ? 'ml-60' : 'ml-0'}`}> {/* Adjust padding based on your navbar height */}
+          <Body />
+        </div>
     </div>
   );
 };
