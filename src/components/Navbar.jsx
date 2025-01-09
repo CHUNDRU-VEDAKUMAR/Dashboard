@@ -1,6 +1,7 @@
 import React, { useState } from 'react';
 import { IconButton } from '@mui/material';
 import { Menu } from '@mui/icons-material'; // Import the menu icon for the toggle button
+import { FaGraduationCap } from 'react-icons/fa';
 
 const Navbar = ({ toggleSidebar }) => {
   const [dropdownOpen, setDropdownOpen] = useState(false);
@@ -14,17 +15,22 @@ const Navbar = ({ toggleSidebar }) => {
   };
 
   return (
-    <div className="navbar bg-white shadow-md fixed top-0 left-0 right-0 z-10 flex items-center justify-between p-3"> {/* Decreased padding */}
+    <div className="navbar bg-white shadow-md fixed top-0 left-0 right-0 z-10 flex items-center px-8 justify-between p-3"> {/* Decreased padding */}
       {/* Sidebar Toggle Button */}
-      <div className="flex-none">
+      <div className="flex gap-2">
         <IconButton onClick={toggleSidebar} className="lg:hidden">
           <Menu />
         </IconButton>
+        <div className='flex gap-4'>
+          <div>
+            <FaGraduationCap size={30}/>
+          </div>
+          <div>
+          <a className="text-xl font-bold">SITE</a>
+          </div>
+        </div>
       </div>
 
-      <div className="flex-1">
-        <a className="text-xl font-bold">College Dashboard</a>
-      </div>
 
       <div className="flex-none gap-2">
         <div className="form-control">
