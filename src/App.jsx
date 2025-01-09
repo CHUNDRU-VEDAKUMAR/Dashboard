@@ -11,7 +11,7 @@ const App = () => {
   };
 
   return (
-    <div className="flex h-screen">
+    <div className=" h-screen">
       {/* Sidebar component */}
       <Sidebar isOpen={isSidebarOpen} toggleSidebar={toggleSidebar} />
 
