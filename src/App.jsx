@@ -4,7 +4,7 @@ import Sidebar from './components/sidebar/Sidebar'; // Sidebar component to show
 import Body from './components/Body'
 
 const App = () => {
-  const [isSidebarOpen, setIsSidebarOpen] = useState(false);
+  const [isSidebarOpen, setIsSidebarOpen] = useState(true);
 
   // Function to toggle the sidebar visibility
   const toggleSidebar = () => {
