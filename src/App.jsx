@@ -13,20 +13,16 @@ const App = () => {
 
   return (
     <div className=" h-screen">
-      {/* Sidebar component */}
       <Sidebar isOpen={isSidebarOpen} toggleSidebar={toggleSidebar} />
-
-      {/* Main content area */}
       <div
         className={`flex-grow transition-all duration-300 ${isSidebarOpen ? 'ml-60' : 'ml-0'}`}
       >
-        {/* Navbar with the sidebar toggle button */}
         <Navbar
           toggleSidebar={toggleSidebar}
           isSidebarOpen={isSidebarOpen}
         />
       </div>
-     <div className={`pt-16 flex-grow transition-all duration-300 ${isSidebarOpen ? 'ml-60' : 'ml-0'}`}> {/* Adjust padding based on your navbar height */}
+     <div className={`pt-16 flex-grow transition-all duration-300 ${isSidebarOpen ? 'ml-60' : 'ml-0'}`}> 
           <Body />
         </div>
     </div>

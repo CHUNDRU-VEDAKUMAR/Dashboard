@@ -9,8 +9,6 @@ import {
   Tooltip,
   Legend,
 } from 'chart.js';
-
-// Register Chart.js components
 ChartJS.register(LineElement, CategoryScale, LinearScale, PointElement, Tooltip, Legend);
 
 const LineChart = ({ title, labels, datasets }) => {

@@ -23,13 +23,12 @@ const Sidebar = ({ isOpen, toggleSidebar }) => {
         '& .MuiDrawer-paper': {
           width: 240,
           boxSizing: 'border-box',
-          background: 'linear-gradient(145deg, #3a3a3a, #1c1c1c)', // Gradient for sidebar background
-          transform: isOpen ? 'translateX(0)' : 'translateX(-240px)', // Sidebar transition
-          color: '#fff', // White text color for contrast
+          background: 'linear-gradient(145deg, #3a3a3a, #1c1c1c)',
+          transform: isOpen ? 'translateX(0)' : 'translateX(-240px)', 
+          color: '#fff',
         },
       }}
     >
-      {/* Sidebar Header */}
       <Box className="flex justify-between items-center p-4 bg-gradient-to-r from-indigo-500 via-purple-500 to-pink-500 text-white">
         <h2 className="text-lg font-bold">College Dashboard</h2>
         <IconButton onClick={toggleSidebar} sx={{ color: 'white' }}>
@@ -37,7 +36,6 @@ const Sidebar = ({ isOpen, toggleSidebar }) => {
         </IconButton>
       </Box>
 
-      {/* Sidebar Links List */}
       <List sx={{ paddingTop: '10px' }}>
         {sitemap.map((item) => (
           <ListItem key={item.id} disablePadding>
@@ -45,7 +43,7 @@ const Sidebar = ({ isOpen, toggleSidebar }) => {
               sx={{
                 padding: '12px 16px',
                 '&:hover': {
-                  backgroundColor: 'rgba(255, 255, 255, 0.1)', // Hover effect
+                  backgroundColor: 'rgba(255, 255, 255, 0.1)', 
                 },
               }}
             >
